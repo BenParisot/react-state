@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ColorPicker from '../components/ColorPicker';
+import ColorPicker from '../react-state/components/ColorPicker';
 
 describe('ColorPicker component', () => {
   it('pickes a Color', () => {
