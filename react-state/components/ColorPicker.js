@@ -7,16 +7,21 @@ export default class ColorPicker extends PureComponent {
       width: '100px'
     }
 
+    colors = ['red', 'blue', 'yellow']
+
     clickHandler = event => {
       this.setState({ background: event.target.textContent });
     }
     
     render() {
+      const buttons = this.colors.map(color => {
+        return <button key={color} onClick={this.clickHandler} style={{ background: color }}>{color}</button>;
+
+      });
+
       return (
         <>
-            <button onClick={this.clickHandler} style={{ background:'red' }}>Red</button>
-            <button onClick={this.clickHandler} style={{ background:'blue' }}>Blue</button>
-            <button onClick={this.clickHandler} style={{ background:'yellow' }}>Yellow</button>
+            {buttons}
             <div style={this.state}></div>
         </>
       );
