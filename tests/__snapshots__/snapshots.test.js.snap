@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter component counts 1`] = `
+<Fragment>
+  <p>
+    Total Count: 
+    0
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    Click me to count!
+  </button>
+</Fragment>
+`;
