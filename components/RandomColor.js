@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 
 export default class RandomColor extends PureComponent {
-  //generate a random color
   constructor() {
     super();
     this.state = {
